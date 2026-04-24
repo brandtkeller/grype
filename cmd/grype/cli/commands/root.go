@@ -91,7 +91,7 @@ You can also pipe in Syft JSON directly:
 			}
 			return runGrype(cmd.Context(), app, opts, userInput)
 		},
-		ValidArgsFunction: dockerImageValidArgsFunction,
+		ValidArgsFunction: rootArgsCompletion,
 	}, opts)
 }
 
